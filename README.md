@@ -1,1 +1,0 @@
-# Sequelize-NodeJs-DemoApp
