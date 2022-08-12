@@ -10,6 +10,10 @@ app.get("/", (req, res) =>{
 })
 
 app.get('/add', userCtrl.addUser)
+app.get('/crud', userCtrl.crudOperation)
+app.get('/query', userCtrl.queryOperation)
+
+
 
 app.listen(port , () => {
     console.log(`App listening on http://localhost:${port}`)

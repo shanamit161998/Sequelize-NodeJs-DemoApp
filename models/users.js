@@ -10,22 +10,30 @@ module.exports = (sequelize, DataTypes) => {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
+            defaultValue:''
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
+            defaultValue:''
+
         },
         gender: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: true,
+            defaultValue:''
+
         },
         createdBy: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: true,
+            defaultValue:''
+
         },
         updatedBy: {
             type: DataTypes.STRING,
-            allowNull: true
+            allowNull: true, 
+            defaultValue:''
         },
     }, { 
         //tableName:'userdata'

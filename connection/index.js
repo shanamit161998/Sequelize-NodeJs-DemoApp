@@ -1,4 +1,5 @@
 const {Sequelize, DataTypes} = require('sequelize')
+const fs = require('fs');
 let database = 'world'
 let database_username = 'root'
 let database_password = 'admin'
@@ -9,7 +10,9 @@ const sequelize = new Sequelize(
     {
         host: 'localhost',
         dialect: 'mysql',
-        logging:false,
+        logging: async (msg) => {
+            fs.appendFile('./data.txt', `${new Date() + msg} \n` , () => {})
+        },
         pool: { max: 5, min: 0, idle: 10000 }
     }
 )
