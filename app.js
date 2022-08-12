@@ -12,9 +12,15 @@ app.get("/", (req, res) =>{
 app.get('/add', userCtrl.addUser)
 app.get('/crud', userCtrl.crudOperation)
 app.get('/query', userCtrl.queryOperation)
+app.get('/gettersetter', userCtrl.getterSetter)
 
 
+app.get('/rawquery', userCtrl.rawQuery)
 
+
+app.get('/onetoone', userCtrl.onetoone)
+
+app.get('/belongsTo', userCtrl.belongsTo)
 app.listen(port , () => {
     console.log(`App listening on http://localhost:${port}`)
 })

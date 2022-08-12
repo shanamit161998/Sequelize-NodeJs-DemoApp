@@ -11,17 +11,29 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             defaultValue:''
+            // set(value){
+            //     this.setDataValue('name', value + ' SINGH')
+            // },
+            // get(value){
+            //     console.log(value)
+            //     this.getDataValue('name', value + ' SINGH')
+            // }
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue:''
-
+            defaultValue:'',
+            set(value){
+                this.setDataValue('name', value + '@yahoo.com')
+            }
         },
         gender: {
             type: DataTypes.STRING,
             allowNull: true,
-            defaultValue:''
+            defaultValue:'', 
+            validate:{
+                equals:'male'
+            }
 
         },
         createdBy: {

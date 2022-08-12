@@ -27,7 +27,13 @@ var db = {}
 db.sequelize = sequelize
 db.Sequelize = Sequelize
 db.users = require('../models/users')(sequelize, DataTypes)
+db.posts = require('../models/posts')(sequelize, DataTypes)
 
+db.users.hasMany(db.posts, {foreignKey:'userId', as:'postDetails'});
+// db.users.hasOne(db.posts, {foreignKey:'userId'});
+db.posts.belongsTo(db.users, {foreignKey:'userId'});
+
+//BELONGS TO MANY through which table
 db.sequelize.sync({force:false}).then(() =>{
     console.log('DB Synced')
 })

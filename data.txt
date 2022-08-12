@@ -94,3 +94,349 @@ Fri Aug 12 2022 17:00:21 GMT+0530 (India Standard Time)Executing (default): INSE
 Fri Aug 12 2022 17:00:21 GMT+0530 (India Standard Time)Executing (default): SELECT `name`, `email` AS `EmailId`, Count(`email`) AS `emailCount` FROM `users` AS `users`; 
 Fri Aug 12 2022 17:00:21 GMT+0530 (India Standard Time)Executing (default): SELECT `userId`, `name`, `email`, `gender`, CONCAT(`email`, ' SINGH') AS `fullName` FROM `users` AS `users`; 
 Fri Aug 12 2022 17:00:21 GMT+0530 (India Standard Time)Executing (default): SELECT `userId`, `name`, `email`, `gender`, `createdBy`, `updatedBy` FROM `users` AS `users` WHERE `users`.`userId` = 2 GROUP BY `name` ORDER BY `users`.`name` DESC LIMIT 0, 2; 
+Fri Aug 12 2022 18:46:04 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:46:04 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:46:04 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:46:44 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:46:44 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:46:44 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:47:20 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:47:20 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:47:20 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:47:23 GMT+0530 (India Standard Time)Executing (default): SELECT * FROM USER WHERE GENDER ='male' 
+Fri Aug 12 2022 18:47:40 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:47:40 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:47:40 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:47:45 GMT+0530 (India Standard Time)Executing (default): SELECT * FROM USERS WHERE GENDER ='male' 
+Fri Aug 12 2022 18:47:52 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:47:52 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:47:52 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:48:41 GMT+0530 (India Standard Time)Executing (default): SELECT * FROM USERS WHERE GENDER ='male' 
+Fri Aug 12 2022 18:56:41 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:56:41 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:56:41 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 18:58:56 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 18:58:56 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 18:58:56 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:00:39 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:00:39 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:00:39 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255), `title` VARCHAR(255), `content` VARCHAR(255), `userId` INTEGER, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:00:52 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:15:30 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:15:30 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:15:30 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:15:30 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:15:30 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:16:35 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:16:35 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:16:35 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:16:35 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:16:35 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:16:37 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:16:37 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:16:37 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:16:37 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:16:37 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:17:08 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:17:08 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:17:08 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:17:08 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:17:08 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:17:29 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:17:29 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:17:29 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:17:29 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:17:29 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:18:25 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:18:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:18:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:18:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:18:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:18:27 GMT+0530 (India Standard Time)Executing (default): SELECT `userId`, `name`, `email`, `gender`, `createdBy`, `updatedBy` FROM `users` AS `users`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `users` (`userId` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL DEFAULT '', `email` VARCHAR(255) NOT NULL DEFAULT '', `gender` VARCHAR(255) DEFAULT '', `createdBy` VARCHAR(255) DEFAULT '', `updatedBy` VARCHAR(255) DEFAULT '', PRIMARY KEY (`userId`)) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255), `title` VARCHAR(255), `content` VARCHAR(255), `userId` INTEGER, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:18:55 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `users` (`userId` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL DEFAULT '', `email` VARCHAR(255) NOT NULL DEFAULT '', `gender` VARCHAR(255) DEFAULT '', `createdBy` VARCHAR(255) DEFAULT '', `updatedBy` VARCHAR(255) DEFAULT '', PRIMARY KEY (`userId`)) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255), `title` VARCHAR(255), `content` VARCHAR(255), `userId` INTEGER, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:23:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:24:16 GMT+0530 (India Standard Time)Executing (default): SELECT `userId`, `name`, `email`, `gender`, `createdBy`, `updatedBy` FROM `users` AS `users`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='world' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `users`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `users` (`userId` INTEGER NOT NULL auto_increment , `name` VARCHAR(255) NOT NULL DEFAULT '', `email` VARCHAR(255) NOT NULL DEFAULT '', `gender` VARCHAR(255) DEFAULT '', `createdBy` VARCHAR(255) DEFAULT '', `updatedBy` VARCHAR(255) DEFAULT '', PRIMARY KEY (`userId`)) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): DROP TABLE IF EXISTS `posts`; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER NOT NULL auto_increment , `name` VARCHAR(255), `title` VARCHAR(255), `content` VARCHAR(255), `userId` INTEGER, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`userId`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+Fri Aug 12 2022 19:25:18 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:25:29 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:27:11 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:27:11 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:27:11 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:27:11 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:27:11 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:29:37 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:30:26 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:31:03 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:31:03 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:03 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:31:03 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:03 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:31:06 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:21 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:31:21 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:21 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:31:21 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:21 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:31:23 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:31:23 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:23 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:31:23 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:23 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:31:25 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:26 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:27 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:38 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:31:38 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:38 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:31:38 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:38 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:31:40 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:31:40 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:31:41 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:31:41 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `post`.`id` AS `post.id`, `post`.`name` AS `post.name`, `post`.`title` AS `post.title`, `post`.`content` AS `post.content`, `post`.`userId` AS `post.userId`, `post`.`created_at` AS `post.created_at`, `post`.`updated_at` AS `post.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `post` ON `users`.`userId` = `post`.`userId`; 
+Fri Aug 12 2022 19:31:46 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:31:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:31:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:31:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:31:49 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:49 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:31:49 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `users`.`gender`, `users`.`createdBy`, `users`.`updatedBy`, `posts`.`id` AS `posts.id`, `posts`.`name` AS `posts.name`, `posts`.`title` AS `posts.title`, `posts`.`content` AS `posts.content`, `posts`.`userId` AS `posts.userId`, `posts`.`created_at` AS `posts.created_at`, `posts`.`updated_at` AS `posts.updated_at` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:35:25 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:35:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:35:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:35:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:35:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:35:46 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:35:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:35:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:35:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:35:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:36:19 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `posts`.`id` AS `posts.id`, `posts`.`title` AS `posts.title`, `posts`.`name` AS `posts.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:37:46 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:37:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:37:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:37:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:37:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:38:10 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `posts`.`id` AS `posts.id`, `posts`.`title` AS `posts.title`, `posts`.`name` AS `posts.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:38:11 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `posts`.`id` AS `posts.id`, `posts`.`title` AS `posts.title`, `posts`.`name` AS `posts.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:38:11 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `posts`.`id` AS `posts.id`, `posts`.`title` AS `posts.title`, `posts`.`name` AS `posts.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `posts` ON `users`.`userId` = `posts`.`userId`; 
+Fri Aug 12 2022 19:38:23 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:38:23 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:23 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:38:23 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:23 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:38:51 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:38:51 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:51 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:38:51 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:51 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:38:58 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:58 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:38:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:38:58 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:38:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:39:12 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:39:12 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:39:12 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:39:12 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:39:12 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:39:15 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `postDetails`.`id` AS `postDetails.id`, `postDetails`.`title` AS `postDetails.title`, `postDetails`.`name` AS `postDetails.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `postDetails` ON `users`.`userId` = `postDetails`.`userId`; 
+Fri Aug 12 2022 19:39:57 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:39:57 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:39:57 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:39:57 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:39:57 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:40:15 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:40:15 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:40:15 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:40:15 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:40:15 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:40:41 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:40:41 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:40:41 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:40:41 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:40:41 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:41:50 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:41:50 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:41:50 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:41:50 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:41:50 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:43:02 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:43:02 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:02 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:43:02 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:02 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:43:18 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:43:18 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:18 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:43:18 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:18 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:43:22 GMT+0530 (India Standard Time)Executing (default): SELECT `users`.`userId`, `users`.`name`, `users`.`email`, `postDetails`.`id` AS `postDetails.id`, `postDetails`.`title` AS `postDetails.title`, `postDetails`.`name` AS `postDetails.Postname` FROM `users` AS `users` LEFT OUTER JOIN `posts` AS `postDetails` ON `users`.`userId` = `postDetails`.`userId`; 
+Fri Aug 12 2022 19:43:51 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:43:51 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:51 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:43:51 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:43:51 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:44:15 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:44:46 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:44:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:44:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:44:46 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:44:46 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:44:49 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:45:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:45:25 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:45:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:45:25 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:45:25 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:45:34 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:47:57 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:47:58 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:50:11 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:50:11 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:11 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:50:11 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:11 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:50:13 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:50:13 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:13 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:50:13 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:13 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:50:24 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:50:56 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:50:56 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:56 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:50:56 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:50:56 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:51:03 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:36 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:51:36 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:51:36 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:51:36 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:51:36 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:51:43 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:45 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:46 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:46 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:51:55 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:51:55 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:51:55 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:51:55 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:51:55 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:52:22 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:52:22 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:52:22 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:52:22 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:52:22 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:52:24 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:52:24 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:52:24 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:52:24 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:52:24 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:52:27 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:53:05 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:05 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:05 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:05 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:05 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:08 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:08 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:08 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:08 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:08 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:16 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:16 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:16 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:16 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:16 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:22 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:53:28 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:28 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:28 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:28 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:28 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:30 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:53:47 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:47 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:47 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:47 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:47 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:54 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:54 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:53:54 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:53:54 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:53:54 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:53:56 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:54:04 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:54:04 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:04 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:54:04 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:04 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:54:07 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:54:33 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:54:33 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:33 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:54:33 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:33 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:54:49 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:54:49 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:49 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:54:49 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:54:49 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 19:54:51 GMT+0530 (India Standard Time)Executing (default): SELECT `posts`.`id`, `posts`.`content`, `posts`.`title`, `user`.`userId` AS `user.userId`, `user`.`name` AS `user.name`, `user`.`email` AS `user.email` FROM `posts` AS `posts` LEFT OUTER JOIN `users` AS `user` ON `posts`.`userId` = `user`.`userId`; 
+Fri Aug 12 2022 19:55:17 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 19:55:17 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:55:17 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 19:55:17 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 19:55:17 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
+Fri Aug 12 2022 20:17:58 GMT+0530 (India Standard Time)Executing (default): SELECT 1+1 AS result 
+Fri Aug 12 2022 20:17:58 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 20:17:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `users` 
+Fri Aug 12 2022 20:17:58 GMT+0530 (India Standard Time)Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'world' 
+Fri Aug 12 2022 20:17:58 GMT+0530 (India Standard Time)Executing (default): SHOW INDEX FROM `posts` 
