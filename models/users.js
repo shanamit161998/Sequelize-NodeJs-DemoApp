@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         name: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue:''
+            defaultValue: ''
             // set(value){
             //     this.setDataValue('name', value + ' SINGH')
             // },
@@ -22,36 +22,41 @@ module.exports = (sequelize, DataTypes) => {
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue:'',
-            set(value){
+            defaultValue: '',
+            set(value) {
                 this.setDataValue('name', value + '@yahoo.com')
             }
         },
         gender: {
             type: DataTypes.STRING,
             allowNull: true,
-            defaultValue:'', 
-            validate:{
-                equals:'male'
+            defaultValue: '',
+            validate: {
+                equals: 'male'
             }
 
         },
         createdBy: {
             type: DataTypes.STRING,
             allowNull: true,
-            defaultValue:''
+            defaultValue: ''
 
         },
         updatedBy: {
             type: DataTypes.STRING,
-            allowNull: true, 
-            defaultValue:''
+            allowNull: true,
+            defaultValue: ''
         },
-    }, { 
+        active: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            defaultValue: 1
+        }
+    }, {
         //tableName:'userdata'
         //updatedAt: false
         //createdAt: false
-        timestamps: false 
+        timestamps: false
         //engine:MYISAM
     })
     return Users;

@@ -148,4 +148,14 @@ const belongsTo = async (req, res) => {
     res.status(200).json(response)
 }
 
-module.exports = { addUser, crudOperation, queryOperation, getterSetter, rawQuery, onetoone, belongsTo }
+const scope = async (req, res) => {
+    let data = await db.users.scope('checkStatus').findAll({})
+    let response = {
+        data
+    }
+
+    res.status(200).json(response)
+}
+
+
+module.exports = { addUser, crudOperation, queryOperation, getterSetter, rawQuery, onetoone, belongsTo, scope }

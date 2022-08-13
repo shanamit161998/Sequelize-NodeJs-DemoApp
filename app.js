@@ -21,6 +21,9 @@ app.get('/rawquery', userCtrl.rawQuery)
 app.get('/onetoone', userCtrl.onetoone)
 
 app.get('/belongsTo', userCtrl.belongsTo)
+
+app.get('/scope', userCtrl.scope)
+
 app.listen(port , () => {
     console.log(`App listening on http://localhost:${port}`)
 })
