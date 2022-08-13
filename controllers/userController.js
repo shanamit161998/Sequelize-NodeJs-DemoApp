@@ -154,8 +154,37 @@ const scope = async (req, res) => {
         data
     }
 
+
+    //required : true or false will actually tell which join to apply
+
     res.status(200).json(response)
 }
 
+
+// //TRANSACTION -----------------------------------------------------------------------------------------
+
+// const t = await db.sequelize.transaction()
+
+// ...
+
+
+// t.commit() // aftertransaction is done 
+// t.rollback() // if error
+
+
+
+ /*-- 1) HOOKS 
+
+
+ before create 
+ after create 
+ .
+ .
+ .
+ .
+ ..
+
+ HOOKS IN MODELES
+ */
 
 module.exports = { addUser, crudOperation, queryOperation, getterSetter, rawQuery, onetoone, belongsTo, scope }

@@ -58,6 +58,18 @@ module.exports = (sequelize, DataTypes) => {
         //createdAt: false
         timestamps: false
         //engine:MYISAM
+        /*
+        hooks:{
+            beforeValidate:(user,  options) => {
+                console.log('YES HOOKS CALLED')
+            }
+        }
+        
+        */ 
+    })
+
+    Users.addHook('beforeValidate', 'customName', (users, options) => {
+        
     })
     return Users;
 }
